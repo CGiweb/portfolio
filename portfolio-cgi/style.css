@@ -211,10 +211,138 @@ li {
     list-style: none;
 }
 
-#contact-itens {
+#contact-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 30px;
     padding: 10px;
 
 } 
+
+.contact-itens > a > i {
+    padding: 8px;
+    font-size: 1.5em;
+    color: var(--azul4);
+}
+
+@media only screen and (max-width: 530px) {
+    .wave {
+        display: none;
+    }
+
+    #logo > img {
+    
+        width: 150px;
+        filter:drop-shadow(4px 4px 9px rgba(0, 0, 0, 0.31));
+        
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px;  
+        
+    }
+
+    header {
+        padding: 70px 0px 0px 15px ;
+        display: flex;
+        font-size: 1.5em;
+    }
+
+    section#about {
+        padding: 10px 0px 0px 15px ;
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.text {
+        width: 100vw;
+        font-size: 1.3em;
+        align-items: center;
+        justify-items: center;
+        
+    }
+
+    div.text > h2 {
+        padding: 0px 20px;
+    }
+
+    div.text > p {
+        padding: 5px 50px;
+        
+    }
+
+    div#img-about > img{
+        width: 100vw;
+    }
+
+    div#projects-itens {
+        display: flex;
+        flex-wrap: wrap;
+        
+        
+    }
+
+    .model {
+        width: 50vw;
+        height: 180px;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        flex-direction: column;
+        
+        border-radius: 20px;
+        background: linear-gradient(145deg, #185e73, #1d6f89);
+        box-shadow:  19px 19px 37px #17586d,
+                 -19px -19px 37px #1f7893;
+    
+    }
+    
+    #projects {
+        padding: 10px 0px 0px 15px ;
+        width: 100vw;
+    }
+
+    #projects > h2 {
+        font-size: 2em;
+    }
+
+
+    .model > img {
+        width: 75%;
+        border-radius: 15px;
+        -webkit-transition: -webkit-transform .5s ease;
+       transition: transform .5s ease;
+        
+    }
+   
+    .model:hover img {
+        -webkit-transform: scale(1.1);
+           transform: scale(1.1);
+        
+    }
+
+
+
+    #contact {
+        padding: 10px 0px 0px 15px ;
+        width: 100vw;
+    }
+    
+    #contact > h2 {
+    font-size: 1em;
+    }
+
+    #contact-list {
+        display: block;
+        
+    }
+
+    .contact-itens {
+        font-size: 0.8em;
+    }
+   
+}
